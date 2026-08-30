@@ -1,0 +1,21 @@
+az container create \
+   --resource-group 559072-rg \
+   --name 559072-app-container \
+   --location brazilsouth \
+   --image acr559072dimdim.azurecr.io/559072-app:latest \
+   --registry-login-server acr559072dimdim.azurecr.io \
+   --registry-username acr559072dimdim \
+   --registry-password "SUA_SENHA_AQUI" \
+   --ip-address public \
+   --os-type Linux \
+   --cpu 1 \
+   --memory 1 \
+   --dns-name-label app559072 \
+   --ports 8082 \
+   --environment-variables \
+     SERVER_PORT="8082" \
+     SPRING_DATASOURCE_URL="jdbc:postgresql://db559072.brazilsouth.azurecontainer.io:5432/mercado" \
+     SPRING_DATASOURCE_USERNAME="postgres" \
+     SPRING_DATASOURCE_PASSWORD="admin" \
+     SPRING_DATASOURCE_DRIVER_CLASS_NAME="org.postgresql.Driver" \
+     SPRING_JPA_PROPERTIES_HIBERNATE_DIALECT="org.hibernate.dialect.PostgreSQLDialect"
