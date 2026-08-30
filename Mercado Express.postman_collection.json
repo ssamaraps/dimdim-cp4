@@ -6,5 +6,40 @@
     "_exporter_id": "49417588",
     "_collection_link": "https://go.postman.co/collection/49417588-45922074-417e-423c-bad4-d7aa80e0021a?source=collection_link"
   },
-  "item": []
+  "item": [
+    {
+      "name": "http://app559072.brazilsouth.azurecontainer.io:8082/mercado",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://app559072.brazilsouth.azurecontainer.io:8082/mercado",
+          "protocol": "http",
+          "host": [
+            "app559072",
+            "brazilsouth",
+            "azurecontainer",
+            "io"
+          ],
+          "port": "8082",
+          "path": [
+            "mercado"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
 }
