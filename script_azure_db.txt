@@ -9,6 +9,9 @@ az container create \
     --dns-name-label db559072 \
     --ports 5432 \
     --ip-address public \
+    --os-type Linux \
+    --cpu 1 \
+    --memory 1 \
     --environment-variables \
         POSTGRES_DB="mercado" \
         POSTGRES_USER="postgres" \
